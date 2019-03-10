@@ -134,7 +134,7 @@ $(function(){
         if(!linkTooltip.length){
             this.tooltipTitle = this.title;
             this.title = "";
-            linkTooltip = $("<div id='link-tooltip'><div class='tooltip-content'>"+this.tooltipTitle+"</div></div>");
+            linkTooltip = $("<div id='link-tooltip'><div class='tooltip-contents'>"+this.tooltipTitle+"</div></div>");
             $("body").append(linkTooltip);
         }
 
@@ -152,7 +152,7 @@ $(function(){
      * end
      */
 
-    $(".tool-img").each(function () {
+    $(".tool-images").each(function () {
         $(this).bind({
             mouseenter: function () {
                 $(this).find(".tool-platform").slideDown(160);
